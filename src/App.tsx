@@ -1,9 +1,20 @@
+import Footer from "./components/footer/Footer"
+import Hero from "./components/Hero"
+import Navbar from "./components/navbar/Navbar"
+
 function App() {
 
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <div className="flex flex-col min-h-screen">
+      <div className="md:fixed w-full z-50">
+        <Navbar />
+      </div>
+      <main className="grow">
+        <Hero/>
+      </main>
+
+      <Footer/>
+    </div>
   )
 }
 
