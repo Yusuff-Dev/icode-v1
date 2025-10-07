@@ -11,3 +11,8 @@
     @apply mx-auto px-4 max-w-[1110px];
   }
 }
+
+.tesha{
+  background: linear-gradient(180deg, rgba(187, 133, 255, 0.14) 0%, rgba(255, 177, 222, 0.14) 100%);
+  backdrop-filter: blur(150px);
+}

@@ -22,7 +22,7 @@ const mockData: DataInterface[] = [
         desc: "New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future."
     },
     {
-        id: 1,
+        id: 3,
         title: "Web Development",
         img: "./layout.png",
         desc: "New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future."
@@ -39,8 +39,9 @@ export default function Services() {
     return (
         <section>
             <div className="container">
-                <SectionTitle>Services</SectionTitle>
-                <h2 className="font-bold text-4xl mt-[15px] max-w-[240px] text-black">What  actually I love to do</h2>
+                <SectionTitle heading="What  actually I love to do" w="240px">Services</SectionTitle>
+
+                <h2 className="font-bold text-4xl mt-[15px] max-w-[240px] text-black"></h2>
 
                 <div className="flex items-center justify-between flex-wrap gap-[30px] mt-[50px]">
                     {

@@ -1,7 +1,12 @@
+import Blog from "./components/Blog"
+import Clients from "./components/Clients"
+import Contact from "./components/Contact"
 import Footer from "./components/footer/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/navbar/Navbar"
+import Projects from "./components/Projects"
 import Services from "./components/Services"
+import Testimonials from "./components/Testimonials"
 
 function App() {
 
@@ -13,8 +18,12 @@ function App() {
       <main className="grow">
         <Hero/>
         <Services/>
+        <Projects/>
+        <Clients/>
+        <Testimonials/>
+        <Blog/>
+        <Contact/>
       </main>
-
       <Footer/>
     </div>
   )
