@@ -3,7 +3,7 @@ import Btn from '../UI/Btn'
 
 export default function Hero() {
     return (
-        <header className='md:py-16'>
+        <header className='py-25 bg-[url("./hero-bg.svg")] bg-contain bg-right-top  bg-no-repeat'>
             <div className="container">
                 <div className='flex flex-col-reverse md:flex-row md:items-center gap-y-10 gap-x-2 justify-between'>
 
@@ -16,7 +16,7 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    <div className='lg:pr-[77px] flex justify-center md:justify-end'>
+                    <div className={`lg:pr-[77px] flex justify-center md:justify-end`}>
                         <div className='max-w-[535px]'>
                             <img src={userImage} alt="user image" loading='lazy' />
                         </div>
