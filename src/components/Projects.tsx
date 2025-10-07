@@ -6,7 +6,7 @@ import project2 from '../assets/project2.png'
 
 export default function Projects() {
   return (
-    <section className="mt-25 pt-[50px] pb-[70px] tesha">
+    <section className="mt-25 pt-[50px] pb-[70px] bg-[url(./project-bg.svg)] bg-center backdrop-blur-[150px]">
       <div className="container">
         <div className="flex flex-wrap justify-between items-center">
           <SectionTitle heading="All Creative Projects" w='200px'>Portfolio</SectionTitle>
