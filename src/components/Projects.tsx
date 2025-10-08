@@ -9,7 +9,9 @@ export default function Projects() {
     <section className="mt-25 pt-[50px] pb-[70px] bg-[url(./project-bg.svg)] bg-center backdrop-blur-[150px]">
       <div className="container">
         <div className="flex flex-wrap justify-between items-center">
-          <SectionTitle heading="All Creative Projects" w='200px'>Portfolio</SectionTitle>
+          <div className="max-w-[204px]">
+            <SectionTitle heading="All Creative Projects">Portfolio</SectionTitle>
+          </div>
           <Link to="#" className="flex items-center gap-[10px] font-medium text-2xl text-black underline">
             Explore More
             <HiArrowSmallRight size={24} color="#8643DC"/>

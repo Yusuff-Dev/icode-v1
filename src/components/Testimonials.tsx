@@ -2,9 +2,14 @@ import SectionTitle from "../UI/SectionTitle";
 
 export default function Testimonials() {
   return (
-    <section>
+    <section className="mt-25">
       <div className="container">
-        <SectionTitle heading="What People Says" w='202px'>Testimonials</SectionTitle>
+        <div className="max-w-[217px]">
+        <SectionTitle heading="What People Says">Testimonials</SectionTitle>
+        </div>
+        <div className="mt-[25px]">
+          hello
+        </div>
       </div>
     </section>
   )

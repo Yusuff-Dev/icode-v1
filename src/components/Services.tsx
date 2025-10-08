@@ -39,9 +39,9 @@ export default function Services() {
     return (
         <section>
             <div className="container">
-                <SectionTitle heading="What  actually I love to do" w="240px">Services</SectionTitle>
-
-                <h2 className="font-bold text-4xl mt-[15px] max-w-[240px] text-black"></h2>
+                <div className="max-w-[246px]">
+                    <SectionTitle heading="What  actually I love to do">Services</SectionTitle>
+                </div>
 
                 <div className="flex items-center justify-between flex-wrap gap-[30px] mt-[50px]">
                     {

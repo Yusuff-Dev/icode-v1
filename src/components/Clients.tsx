@@ -57,16 +57,18 @@ export default function Clients() {
   return (
     <section className="mt-25">
       <div className="container">
-        <SectionTitle heading="Big deal with" w='200px'>Clients</SectionTitle>
+        <div className="max-w-[140px]">
+          <SectionTitle heading="Big deal with">Clients</SectionTitle>
+        </div>
 
-        <div className="flex items-center justify-between flex-wrap gap-2 sm:gap-4 md:gap-[50px] mt-[44px]">
+        <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-4 md:gap-[50px] mt-[44px]">
           {
             companies.length ?
               companies.map(company => (
                 <div
                   style={{ background: `${company.bgColor}`, borderColor: `${company.borderColor}`, boxShadow: `0 0 30px ${company.borderColor}` }}
                   key={company.id}
-                  className={`border grow min-w-[170px] h-[170px] rounded-[10px] flex flex-col items-center justify-center gap-[30px]`}>
+                  className={`border w-[170px] h-[170px] rounded-[10px] flex flex-col items-center justify-center gap-[30px]`}>
                   <div>
                     <img src={company.img} alt={company.name} />
                   </div>
