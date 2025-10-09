@@ -63,16 +63,16 @@ export default function Slider() {
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
           <div className="flex flex-col items-center relative">
-            <div className="rounded-2xl w-[70px] h-[70px] overflow-hidden blur-[2px] absolute left-0 top-11 -z-10">
+            <div data-aos="zoom-in" data-aos-delay={100} className="rounded-2xl w-[70px] h-[70px] overflow-hidden blur-[2px] absolute left-0 top-11 -z-10">
                 <img src={leftT} alt="left top" className="w-full h-full object-cover"/>
             </div>
-            <div className="rounded-2xl w-[70px] h-[70px] overflow-hidden blur-[2px] absolute right-0 top-11 -z-10">
+            <div data-aos="zoom-in" data-aos-delay={200} className="rounded-2xl w-[70px] h-[70px] overflow-hidden blur-[2px] absolute right-0 top-11 -z-10">
                 <img src={girl} alt="left top" className="w-full h-full object-cover"/>
             </div>
-            <div className="rounded-2xl w-[70px] h-[70px] overflow-hidden blur-[2px] absolute left-[157px] bottom-11 -z-10">
+            <div data-aos="zoom-in" data-aos-delay={200} className="rounded-2xl w-[70px] h-[70px] overflow-hidden blur-[2px] absolute left-[157px] bottom-11 -z-10">
                 <img src={leftB} alt="left top" className="w-full h-full object-cover"/>
             </div>
-            <div className="rounded-2xl w-[70px] h-[70px] overflow-hidden blur-[2px] absolute right-[157px] bottom-11 -z-10">
+            <div data-aos="zoom-in" data-aos-delay={100} className="rounded-2xl w-[70px] h-[70px] overflow-hidden blur-[2px] absolute right-[157px] bottom-11 -z-10">
                 <img src={rightB} alt="left top" className="w-full h-full object-cover"/>
             </div>
             <div>
@@ -94,18 +94,18 @@ export default function Slider() {
               </svg>
             </div>
 
-            <p className="max-w-[569px] mt-5 text-center text-[#636066] leading-[32px] font-medium">
+            <p data-aos="fade-up" data-aos-delay={300} className="max-w-[569px] mt-5 text-center text-[#636066] leading-[32px] font-medium">
               {slide.quote}
             </p>
 
             <div className="mt-[50px]">
-              <div className="rounded-[15px] flex items-center justify-center overflow-hidden w-25 h-25">
+              <div data-aos="zoom-in" data-aos-delay={200} className="rounded-[15px] flex items-center justify-center overflow-hidden w-25 h-25">
                 <img src={slide.img} alt={slide.username} className="w-full h-full object-cover"/>
               </div>
-              <h4 className="font-medium text-xl mt-5 text-center">
+              <h4 data-aos="zoom-in" data-aos-delay={300} className="font-medium text-xl mt-5 text-center">
                 {slide.username}
               </h4>
-              <h5 className="mt-[5px] text-center">{slide.company}</h5>
+              <h5 data-aos="zoom-in" data-aos-delay={400} className="mt-[5px] text-center">{slide.company}</h5>
             </div>
           </div>
         </SwiperSlide>

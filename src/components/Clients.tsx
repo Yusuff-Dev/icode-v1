@@ -64,8 +64,8 @@ export default function Clients() {
         <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-4 md:gap-[50px] mt-[44px]">
           {
             companies.length ?
-              companies.map(company => (
-                <div
+              companies.map((company, i) => (
+                <div data-aos="fade-up" data-aos-delay={i * 100}
                   style={{ background: `${company.bgColor}`, borderColor: `${company.borderColor}`, boxShadow: `0 0 30px ${company.borderColor}` }}
                   key={company.id}
                   className={`border w-[170px] h-[170px] rounded-[10px] flex flex-col items-center justify-center gap-[30px]`}>

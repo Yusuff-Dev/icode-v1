@@ -1,14 +1,14 @@
-import Blog from "./components/Blog"
-import Clients from "./components/Clients"
-import Contact from "./components/Contact"
-import Footer from "./components/footer/Footer"
-import Hero from "./components/Hero"
-import Navbar from "./components/navbar/Navbar"
-import Projects from "./components/Projects"
-import Services from "./components/Services"
-import Testimonials from "./components/Testimonials"
+import { useEffect } from "react";
+import AOS from 'aos'
+import "aos/dist/aos.css";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./components/pages/Home";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true, easing: "ease-in-out",});
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -16,17 +16,11 @@ function App() {
         <Navbar />
       </div>
       <main className="grow">
-        <Hero/>
-        <Services/>
-        <Projects/>
-        <Clients/>
-        <Testimonials/>
-        <Blog/>
-        <Contact/>
+        <Home/>
       </main>
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

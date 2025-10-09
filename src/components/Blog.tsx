@@ -47,14 +47,14 @@ export default function Blog() {
       <div className="container">
         <div className="flex gap-[25px] flex-wrap">
 
-          <div className="max-w-[165px]">
+          <div className="max-w-[165px]" data-aos="fade-up" data-aos-delay={200}>
             <SectionTitle heading="Get News Feeds">Blog</SectionTitle>
           </div>
 
           <div className="flex grow gap-10 flex-wrap">
             {blogs.length ? (
               blogs.map((blog) => (
-                <div key={blog.id} className="group grow-1 cursor-pointer hover:grow-2 duration-200 h-[350px] basis-[255px] shrink-0 relative">
+                <div data-aos="zoom-in" data-aos-delay={+blog.id * 150} key={blog.id} className="group grow-1 cursor-pointer hover:grow-2 duration-200 h-[350px] basis-[255px] shrink-0 relative">
                   <div className="w-full h-full absolute group-hover:h-[233px] duration-200">
                     <img
                       src={blog.img}
@@ -74,7 +74,7 @@ export default function Blog() {
                 </div>
               ))
             ) : (
-              <h4 className="text-xl text-black text-center">There is no data!</h4>
+              <h4 data-aos="fade-up" data-aos-delay={100} className="text-xl text-black text-center">There is no data!</h4>
             )}
           </div>
         </div>

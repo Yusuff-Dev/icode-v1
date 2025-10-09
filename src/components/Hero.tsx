@@ -8,16 +8,16 @@ export default function Hero() {
                 <div className='flex flex-col-reverse md:flex-row md:items-center gap-y-10 gap-x-2 justify-between'>
 
                     <div className="flex flex-col gap-2 sm:gap-5">
-                        <h1 className="text-4xl sm:text-6xl font-bold leading-[120%]"><p className="text-xl sm:text-2xl font-medium text-[#666]">Hello,</p> Adam Zakob</h1>
-                        <p className="text-xl sm:text-2xl text-[#25202F]">a freelance UX Designer</p>
+                        <h1 data-aos="fade-right" className="text-4xl sm:text-6xl font-bold leading-[120%]"><p className="text-xl sm:text-2xl font-medium text-[#666]">Hello,</p> Adam Zakob</h1>
+                        <p data-aos="fade-right" data-aos-delay="100" className="text-xl sm:text-2xl text-[#25202F]">a freelance UX Designer</p>
 
-                        <div className='mt-6 md:mt-12 lg:mt-16'>
+                        <div data-aos="fade-right" data-aos-delay="200" className='mt-6 md:mt-12 lg:mt-16'>
                             <Btn>Let’s Talk</Btn>
                         </div>
                     </div>
 
                     <div className={`lg:pr-[77px] flex justify-center md:justify-end`}>
-                        <div className='max-w-[535px]'>
+                        <div className='max-w-[535px]' data-aos-delay="300" data-aos="fade-left">
                             <img src={userImage} alt="user image" loading='lazy' />
                         </div>
                     </div>

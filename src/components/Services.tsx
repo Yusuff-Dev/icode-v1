@@ -39,7 +39,7 @@ export default function Services() {
     return (
         <section>
             <div className="container">
-                <div className="max-w-[246px]">
+                <div className="max-w-[246px]" data-aos="fade-right">
                     <SectionTitle heading="What  actually I love to do">Services</SectionTitle>
                 </div>
 
@@ -48,8 +48,8 @@ export default function Services() {
                         data.length ?
                             <>
                                 {
-                                    data.map(item => (
-                                        <div key={item.id} className="flex flex-col gap-5 grow basis-[200px]">
+                                    data.map((item, i) => (
+                                        <div data-aos="fade-up" data-aos-delay={i * 150} key={item.id} className="flex flex-col gap-5 grow basis-[200px]">
                                             <div className="flex items-center gap-5">
                                                 <div className="bg-[url(./Polygon.png)] bg-no-repeat bg-cover bg-center w-[62px] h-[62px] flex items-center justify-center">
                                                     <img src={item.img} alt={item.title} />

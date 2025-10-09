@@ -5,7 +5,7 @@ export default function Testimonials() {
   return (
     <section className="mt-[50px] py-[50px] bg-[url(./slider-bg.svg)] bg-contain bg-bottom">
       <div className="container">
-        <div className="max-w-[217px]">
+        <div className="max-w-[217px]" data-aos="fade-up" data-aos-delay={100}>
           <SectionTitle heading="What People Says">Testimonials</SectionTitle>
         </div>
 

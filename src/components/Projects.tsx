@@ -9,20 +9,20 @@ export default function Projects() {
     <section className="mt-25 pt-[50px] pb-[70px] bg-[url(./project-bg.svg)] bg-center backdrop-blur-[150px]">
       <div className="container">
         <div className="flex flex-wrap justify-between items-center">
-          <div className="max-w-[204px]">
+          <div className="max-w-[204px]" data-aos="fade-right">
             <SectionTitle heading="All Creative Projects">Portfolio</SectionTitle>
           </div>
-          <Link to="#" className="flex items-center gap-[10px] font-medium text-2xl text-black underline">
+          <Link data-aos="fade-up" data-aos-delay={100} to="#" className="flex items-center gap-[10px] font-medium text-2xl text-black underline">
             Explore More
             <HiArrowSmallRight size={24} color="#8643DC"/>
           </Link>
         </div>
 
         <div className="flex items-center justify-between flex-wrap md:flex-nowrap gap-[30px] mt-[30px]">
-          <div className="grow">
+          <div data-aos="zoom-in" data-aos-delay={100} className="grow">
             <img src={project1} alt="project 1" className="w-full h-full object-cover"/>
           </div>
-          <div className="grow">
+          <div data-aos="zoom-in" data-aos-delay={200} className="grow">
             <img src={project2} alt="project 2" className="w-full h-full object-cover"/>
           </div>
         </div>
