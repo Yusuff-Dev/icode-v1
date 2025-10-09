@@ -47,7 +47,7 @@ export default function Blog() {
       <div className="container">
         <div className="flex gap-[25px] flex-wrap">
 
-          <div className="max-w-[165px]" data-aos="fade-up" data-aos-delay={200}>
+          <div className="max-w-[165px]" data-aos="fade-right">
             <SectionTitle heading="Get News Feeds">Blog</SectionTitle>
           </div>
 

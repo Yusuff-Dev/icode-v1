@@ -9,13 +9,13 @@ export default function Contact() {
     <section className="mt-25">
       <div className="container">
         <div className="flex justify-between flex-wrap">
-          <div data-aos="fade-up" data-aos-delay={200} className="max-w-[515px] !font-[roboto] font-medium">
+          <div data-aos="fade-right"className="max-w-[515px] !font-[roboto] font-medium">
             <SectionTitle heading="Let me know if you want to talk about a potential collaboration. I'm available for freelance work.">
               Contact me
             </SectionTitle>
           </div>
 
-          <div data-aos="fade-up" data-aos-delay={300} className="mt-25 font-[roboto] text-2xl text-purple-500">
+          <div data-aos="fade-left" data-aos-delay={300} className="mt-25 font-[roboto] text-2xl text-purple-500">
             <Link to={'email:infoname@mail.com'}>infoname@mail.com</Link>
           </div>
         </div>

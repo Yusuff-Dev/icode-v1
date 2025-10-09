@@ -8,7 +8,7 @@ import Contact from "../Contact";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <Services />
       <Projects />
@@ -16,6 +16,6 @@ export default function Home() {
       <Testimonials />
       <Blog />
       <Contact />
-    </>
+    </div>
   );
 }

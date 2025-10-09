@@ -57,7 +57,7 @@ export default function Clients() {
   return (
     <section className="mt-25">
       <div className="container">
-        <div className="max-w-[140px]">
+        <div className="max-w-[140px]" data-aos="fade-right">
           <SectionTitle heading="Big deal with">Clients</SectionTitle>
         </div>
 

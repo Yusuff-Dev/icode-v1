@@ -3,7 +3,7 @@ import AOS from 'aos'
 import "aos/dist/aos.css";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
-import Home from "./components/pages/Home";
+import { Outlet } from "react-router";
 
 function App() {
   useEffect(() => {
@@ -15,8 +15,8 @@ function App() {
       <div className="md:fixed w-full z-50">
         <Navbar />
       </div>
-      <main className="grow">
-        <Home/>
+      <main className="grow ">
+        <Outlet/>
       </main>
       <Footer />
     </div>

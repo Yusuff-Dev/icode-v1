@@ -19,7 +19,7 @@ const links = [
     },
 
     {
-        url: '/blog',
+        url: '/blogs',
         name: "blog"
     },
 ]
