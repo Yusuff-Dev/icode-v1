@@ -10,3 +10,16 @@
     @apply mx-auto px-4 max-w-[1110px];
   }
 }
+
+.swiper-pagination-bullet {
+  background-color: transparent !important;
+  border: solid 1px #DEBAD9 !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #8643DC !important;
+  border: none !important;
+}
+

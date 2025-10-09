@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SectionTitle from "../UI/SectionTitle";
 import blogs1 from '../assets/blogs1.png'
 
@@ -36,7 +36,7 @@ export default function Blog() {
           <div className="flex ">
             {
               blogs?.map(blog=>(
-                <div className="group w-[255px] h-[350px] cursor-pointer bg-white shadow hover:w-[350px] transition-all duration-500 origin-bottom">
+                <div key={blog.id} className="group w-[255px] h-[350px] cursor-pointer bg-white shadow hover:w-[350px] transition-all duration-500 origin-bottom">
                   <div className="w-full h-full group-hover:h-[233px] transition-all duration-200 object-cover">
                     <img src={blog.img} alt={blog.desc} className="w-full h-full object-cover"/>
                   </div>
