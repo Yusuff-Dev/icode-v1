@@ -51,10 +51,10 @@ export default function Blog() {
             <SectionTitle heading="Get News Feeds">Blog</SectionTitle>
           </div>
 
-          <div className="flex grow gap-10">
+          <div className="flex grow gap-10 flex-wrap">
             {blogs.length ? (
               blogs.map((blog) => (
-                <div key={blog.id} className="group grow-1 cursor-pointer hover:grow-2 duration-200 h-[350px] relative">
+                <div key={blog.id} className="group grow-1 cursor-pointer hover:grow-2 duration-200 h-[350px] basis-[255px] shrink-0 relative">
                   <div className="w-full h-full absolute group-hover:h-[233px] duration-200">
                     <img
                       src={blog.img}

@@ -1,6 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 import { Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import { useState, useEffect } from "react";
 import michail from '../assets/michail.png';
@@ -58,7 +56,7 @@ export default function Slider() {
         clickable: true,
       }}
       className="mySwiper"
-      spaceBetween={20}
+      spaceBetween={0}
       slidesPerView={1}
       loop={true}
     >
